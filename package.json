@@ -1,0 +1,46 @@
+{
+    "name": "lesson09",
+    "version": "0.0.1",
+    "main": "./src/server/index.js",
+    "author": "Checha Valerii <chechavalera@gmail.com>",
+    "scripts": {
+        "start": "node src/server/index.js",
+        "test": "jest --coverage"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm test -- checkImportantFiles.test.js"
+        }
+    },
+    "dependencies": {
+        "@hapi/joi": "17.1.1",
+        "body-parser": "1.19.0",
+        "chai": "4.3.6",
+        "chai-fs": "2.0.0",
+        "compression": "1.7.4",
+        "cookie-parser": "1.4.5",
+        "cors": "2.8.5",
+        "eslint-config-airbnb": "18.2.1",
+        "express": "4.17.1",
+        "helmet": "4.6.0",
+        "mongoose": "6.0.9"
+    },
+    "devDependencies": {
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "7.32.0",
+        "eslint-config-airbnb-base": "15.0.0",
+        "eslint-config-prettier": "8.3.0",
+        "eslint-plugin-import": "2.25.4",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-prettier": "4.0.0",
+        "husky": "7.0.4",
+        "jest": "27.4.7",
+        "jest-file-exists": "19.0.0",
+        "supertest": "6.2.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
